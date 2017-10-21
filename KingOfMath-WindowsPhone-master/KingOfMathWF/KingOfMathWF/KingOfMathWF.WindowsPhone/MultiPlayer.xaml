@@ -1,0 +1,75 @@
+﻿<Page
+    x:Class="KingOfMathWF.MultiPlayer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:KingOfMathWF"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="Assets/templatmultiplayer.png"/>
+        </Grid.Background>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,5">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button x:Name="button11" Content="Button" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" BorderThickness="0" Background="#FFACACAC" FontFamily="Segoe UI" Foreground="Black" Click="button11_Click"/>
+                <Button x:Name="button12" Content="Button" HorizontalAlignment="Center" Margin="160,0,0,0" VerticalAlignment="Center" BorderThickness="0" Background="#FFACACAC" FontFamily="Segoe UI" Foreground="Black" Click="button12_Click"/>
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,15,0,0">
+                <Button x:Name="button13" Content="Button" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" BorderThickness="0" Background="#FFACACAC" FontFamily="Segoe UI" Foreground="Black" Click="button13_Click"/>
+                <Button x:Name="button14" Content="Button" HorizontalAlignment="Center" Margin="80,0,0,0" VerticalAlignment="Center" BorderThickness="0" Background="#FFACACAC" FontFamily="Segoe UI" Foreground="Black" Click="button14_Click"/>
+
+            </StackPanel>
+        </StackPanel>
+        <TextBlock x:Name="TFquestion1" Foreground="Black" HorizontalAlignment="Center" Margin="0,0,0,160" TextWrapping="Wrap" Text="Question" VerticalAlignment="Bottom" Height="41" Width="200" FontFamily="Segoe UI" FontSize="20" TextAlignment="Center" FontWeight="Bold"/>
+        <TextBlock x:Name="TFstatus1" HorizontalAlignment="Left" Margin="14,80,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Height="33" Width="160" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI"/>
+
+
+
+        <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,5,0,0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button x:Name="button22" Content="Button" HorizontalAlignment="Center" Margin="0,0,80,0" VerticalAlignment="Center" BorderThickness="0" Background="#FFACACAC" FontFamily="Segoe UI" Foreground="Black" RenderTransformOrigin="0.5,0.5" Click="button22_Click">
+                    <Button.RenderTransform>
+                        <CompositeTransform Rotation="180.0"/>
+                    </Button.RenderTransform>
+                </Button>
+                <Button x:Name="button23" Content="Button" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" BorderThickness="0" Background="#FFACACAC" FontFamily="Segoe UI" Foreground="Black" RenderTransformOrigin="0.5,0.5" Click="button23_Click">
+                    <Button.RenderTransform>
+                        <CompositeTransform Rotation="180.0"/>
+                    </Button.RenderTransform>
+                </Button>
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,15,0,0">
+                <Button x:Name="button21" Content="Button" HorizontalAlignment="Center" Margin="0,0,160,0" VerticalAlignment="Center" BorderThickness="0" Background="#FFACACAC" FontFamily="Segoe UI" Foreground="Black" RenderTransformOrigin="0.5,0.5" Click="button21_Click">
+                    <Button.RenderTransform>
+                        <CompositeTransform Rotation="180.0"  />
+                    </Button.RenderTransform>
+                </Button>
+                <Button x:Name="button24" Content="Button" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" BorderThickness="0" Background="#FFACACAC" FontFamily="Segoe UI" Foreground="Black" RenderTransformOrigin="0.5,0.5" Click="button24_Click">
+                    <Button.RenderTransform>
+                        <CompositeTransform Rotation="180.0"/>
+                    </Button.RenderTransform>
+                </Button>
+
+            </StackPanel>
+        </StackPanel>
+
+
+        <TextBlock x:Name="TFquestion2" Foreground="Black" HorizontalAlignment="Center" Margin="0,160,0,0" TextWrapping="Wrap" Text="Question" VerticalAlignment="Top" Height="41" Width="200" FontFamily="Segoe UI" FontSize="20" TextAlignment="Center" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="180.0"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="TFstatus2" Margin="0,0,14,80" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Height="33" Width="160" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" HorizontalAlignment="Right">
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="180.0"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+
+
+    </Grid>
+</Page>

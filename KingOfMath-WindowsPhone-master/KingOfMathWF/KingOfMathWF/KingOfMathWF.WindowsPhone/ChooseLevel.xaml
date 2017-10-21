@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="KingOfMathWF.ChooseLevel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:KingOfMathWF"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+    <Grid Margin="0,0.333,0,-0.333">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/b8.png"/>
+        </Grid.Background>
+        <StackPanel HorizontalAlignment="Center" Height="578" VerticalAlignment="Center" Width="300" Margin="50,15,50,47">
+            <Button x:Name="BTlvl1" Content="Level 1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="BTlvl1_Click" Foreground="Black" BorderThickness="0" ClickMode="Press" >
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/button.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="BTlvl2" Content="Level 2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="BTlvl2_Click" Foreground="Black" BorderThickness="0" ClickMode="Press">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/button.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="BTlvl3" Content="Level 3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="BTlvl3_Click" Foreground="Black" BorderThickness="0" ClickMode="Press" >
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/button.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="BTlvl4" Content="Level 4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="BTlvl4_Click" Foreground="Black" BorderThickness="0" ClickMode="Press">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/button.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="BTlvl5" Content="Level 5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="BTlvl5_Click" Foreground="Black" BorderThickness="0" ClickMode="Press" >
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/button.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="BTlvl6" Content="Level 6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="BTlvl6_Click" Foreground="Black" BorderThickness="0" ClickMode="Press">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/button.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="BTlvl7" Content="Level 7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="BTlvl7_Click" Foreground="Black" BorderThickness="0" ClickMode="Press" >
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/button.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="BTlvl8" Content="Level 8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="BTlvl8_Click" Foreground="Black" BorderThickness="0" ClickMode="Press">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/button.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="BTlvl9" Content="Level 9" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="BTlvl9_Click" Foreground="Black" BorderThickness="0" ClickMode="Press" >
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/button.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="BTlvl10" Content="Level 10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="BTlvl10_Click" Foreground="Black" BorderThickness="0" ClickMode="Press">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/button.png"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{07AFBCA6-20F9-4142-B6F0-E00E85F9F430}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KingOfMathWF</RootNamespace>
+    <AssemblyName>KingOfMathWF.WindowsPhone</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{76F1466A-8B6D-4E39-A767-685A06062A39};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SynthesizeLinkMetadata>true</SynthesizeLinkMetadata>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
+    <AppxPackageDir>C:\Users\Amine\Desktop\ssss\</AppxPackageDir>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AdventureMap.xaml.cs">
+      <DependentUpon>AdventureMap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseLevel.xaml.cs">
+      <DependentUpon>ChooseLevel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseMode.xaml.cs">
+      <DependentUpon>ChooseMode.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseQuizz.xaml.cs">
+      <DependentUpon>ChooseQuizz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseType.xaml.cs">
+      <DependentUpon>ChooseType.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GamePage.xaml.cs">
+      <DependentUpon>GamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ContinuationManager.cs" />
+    <Compile Include="Helpers\FaceBookHelper.cs" />
+    <Compile Include="Helpers\SuspensionManager.cs" />
+    <Compile Include="IsolatedStorageHelper.cs" />
+    <Compile Include="LeaderBoard.xaml.cs">
+      <DependentUpon>LeaderBoard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.xaml.cs">
+      <DependentUpon>MainMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MultiPlayer.xaml.cs">
+      <DependentUpon>MultiPlayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quizz.cs" />
+    <Compile Include="SharedInformation.cs" />
+    <Compile Include="Tutorials.xaml.cs">
+      <DependentUpon>Tutorials.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\adventure.png" />
+    <Content Include="Assets\AdventureBt\level1.png" />
+    <Content Include="Assets\AdventureBt\level10.png" />
+    <Content Include="Assets\AdventureBt\level11.png" />
+    <Content Include="Assets\AdventureBt\level12.png" />
+    <Content Include="Assets\AdventureBt\level13.png" />
+    <Content Include="Assets\AdventureBt\level14.png" />
+    <Content Include="Assets\AdventureBt\level15.png" />
+    <Content Include="Assets\AdventureBt\level16.png" />
+    <Content Include="Assets\AdventureBt\level17.png" />
+    <Content Include="Assets\AdventureBt\level18.png" />
+    <Content Include="Assets\AdventureBt\level19.png" />
+    <Content Include="Assets\AdventureBt\level2.png" />
+    <Content Include="Assets\AdventureBt\level20.png" />
+    <Content Include="Assets\AdventureBt\level21.png" />
+    <Content Include="Assets\AdventureBt\level22.png" />
+    <Content Include="Assets\AdventureBt\level23.png" />
+    <Content Include="Assets\AdventureBt\level24.png" />
+    <Content Include="Assets\AdventureBt\level25.png" />
+    <Content Include="Assets\AdventureBt\level26.png" />
+    <Content Include="Assets\AdventureBt\level27.png" />
+    <Content Include="Assets\AdventureBt\level28.png" />
+    <Content Include="Assets\AdventureBt\level29.png" />
+    <Content Include="Assets\AdventureBt\level3.png" />
+    <Content Include="Assets\AdventureBt\level30.png" />
+    <Content Include="Assets\AdventureBt\level31.png" />
+    <Content Include="Assets\AdventureBt\level32.png" />
+    <Content Include="Assets\AdventureBt\level33.png" />
+    <Content Include="Assets\AdventureBt\level34.png" />
+    <Content Include="Assets\AdventureBt\level35.png" />
+    <Content Include="Assets\AdventureBt\level36.png" />
+    <Content Include="Assets\AdventureBt\level37.png" />
+    <Content Include="Assets\AdventureBt\level38.png" />
+    <Content Include="Assets\AdventureBt\level4.png" />
+    <Content Include="Assets\AdventureBt\level5.png" />
+    <Content Include="Assets\AdventureBt\level6.png" />
+    <Content Include="Assets\AdventureBt\level7.png" />
+    <Content Include="Assets\AdventureBt\level8.png" />
+    <Content Include="Assets\AdventureBt\level9.png" />
+    <Content Include="Assets\AdventureBt\levellevel1.png" />
+    <Content Include="Assets\AdventureBt\levellevel10.png" />
+    <Content Include="Assets\AdventureBt\levellevel11.png" />
+    <Content Include="Assets\AdventureBt\levellevel12.png" />
+    <Content Include="Assets\AdventureBt\levellevel13.png" />
+    <Content Include="Assets\AdventureBt\levellevel14.png" />
+    <Content Include="Assets\AdventureBt\levellevel15.png" />
+    <Content Include="Assets\AdventureBt\levellevel16.png" />
+    <Content Include="Assets\AdventureBt\levellevel17.png" />
+    <Content Include="Assets\AdventureBt\levellevel18.png" />
+    <Content Include="Assets\AdventureBt\levellevel19.png" />
+    <Content Include="Assets\AdventureBt\levellevel2.png" />
+    <Content Include="Assets\AdventureBt\levellevel20.png" />
+    <Content Include="Assets\AdventureBt\levellevel21.png" />
+    <Content Include="Assets\AdventureBt\levellevel22.png" />
+    <Content Include="Assets\AdventureBt\levellevel23.png" />
+    <Content Include="Assets\AdventureBt\levellevel24.png" />
+    <Content Include="Assets\AdventureBt\levellevel25.png" />
+    <Content Include="Assets\AdventureBt\levellevel26.png" />
+    <Content Include="Assets\AdventureBt\levellevel27.png" />
+    <Content Include="Assets\AdventureBt\levellevel28.png" />
+    <Content Include="Assets\AdventureBt\levellevel29.png" />
+    <Content Include="Assets\AdventureBt\levellevel3.png" />
+    <Content Include="Assets\AdventureBt\levellevel30.png" />
+    <Content Include="Assets\AdventureBt\levellevel31.png" />
+    <Content Include="Assets\AdventureBt\levellevel32.png" />
+    <Content Include="Assets\AdventureBt\levellevel33.png" />
+    <Content Include="Assets\AdventureBt\levellevel34.png" />
+    <Content Include="Assets\AdventureBt\levellevel35.png" />
+    <Content Include="Assets\AdventureBt\levellevel36.png" />
+    <Content Include="Assets\AdventureBt\levellevel37.png" />
+    <Content Include="Assets\AdventureBt\levellevel38.png" />
+    <Content Include="Assets\AdventureBt\levellevel4.png" />
+    <Content Include="Assets\AdventureBt\levellevel5.png" />
+    <Content Include="Assets\AdventureBt\levellevel6.png" />
+    <Content Include="Assets\AdventureBt\levellevel7.png" />
+    <Content Include="Assets\AdventureBt\levellevel8.png" />
+    <Content Include="Assets\AdventureBt\levellevel9.png" />
+    <Content Include="Assets\b8.png" />
+    <Content Include="Assets\backgrouditem2.png" />
+    <Content Include="Assets\BadgeLogo.scale-100.png" />
+    <Content Include="Assets\BadgeLogo.scale-140.png" />
+    <Content Include="Assets\BadgeLogo.scale-240.png" />
+    <Content Include="Assets\button.png" />
+    <Content Include="Assets\icon.scale-100.jpg" />
+    <Content Include="Assets\iconIos.scale-100.jpg" />
+    <Content Include="Assets\library.png" />
+    <Content Include="Assets\life1.png" />
+    <Content Include="Assets\life2.png" />
+    <Content Include="Assets\Logo.scale-240.png" />
+    <Content Include="Assets\logo2.png" />
+    <Content Include="Assets\multiplayer.png" />
+    <Content Include="Assets\Player\player0.png" />
+    <Content Include="Assets\Player\player1.png" />
+    <Content Include="Assets\Player\player2.png" />
+    <Content Include="Assets\Player\player3.png" />
+    <Content Include="Assets\Player\player4.png" />
+    <Content Include="Assets\Quizz.png" />
+    <Content Include="Assets\Quizz\backgrouditem.png" />
+    <Content Include="Assets\Quizz\compteur3.png" />
+    <Content Include="Assets\Quizz\quizzitem1.png" />
+    <Content Include="Assets\Quizz\quizzitem2.png" />
+    <Content Include="Assets\Quizz\quizzitem3.png" />
+    <Content Include="Assets\Quizz\quizzitem4.png" />
+    <Content Include="Assets\Quizz\quizzitem5.png" />
+    <Content Include="Assets\Quizz\quizzitem6.png" />
+    <Content Include="Assets\Quizz\quizzitem7.png" />
+    <Content Include="Assets\SmallLogo.scale-240.png" />
+    <Content Include="Assets\SoundOff.png" />
+    <Content Include="Assets\SoundOn.png" />
+    <Content Include="Assets\SplashScreen.scale-240.png" />
+    <Content Include="Assets\Square150x150Logo.scale-100.png" />
+    <Content Include="Assets\Square150x150Logo.scale-140.png" />
+    <Content Include="Assets\Square150x150Logo.scale-240.png" />
+    <Content Include="Assets\Square44x44Logo.scale-100.png" />
+    <Content Include="Assets\Square44x44Logo.scale-140.png" />
+    <Content Include="Assets\Square44x44Logo.scale-240.png" />
+    <Content Include="Assets\Square71x71Logo.scale-100.png" />
+    <Content Include="Assets\Square71x71Logo.scale-140.png" />
+    <Content Include="Assets\Square71x71Logo.scale-240.png" />
+    <Content Include="Assets\star.png" />
+    <Content Include="Assets\star2.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-140.png" />
+    <Content Include="Assets\StoreLogo.scale-240.png" />
+    <Content Include="Assets\template1.jpg" />
+    <Content Include="Assets\template2.jpg" />
+    <Content Include="Assets\template3.jpg" />
+    <Content Include="Assets\template4.jpg" />
+    <Content Include="Assets\templatmultiplayer.png" />
+    <Content Include="Assets\tutorial.png" />
+    <Content Include="Assets\Tutorial\moins.png" />
+    <Content Include="Assets\Tutorial\plus.png" />
+    <Content Include="Assets\Tutorial\tutoaddition1.png" />
+    <Content Include="Assets\Tutorial\tutoaddition2.png" />
+    <Content Include="Assets\Tutorial\tutoaddition3.png" />
+    <Content Include="Assets\Tutorial\tutoaddition4.png" />
+    <Content Include="Assets\Tutorial\tutodivision1.png" />
+    <Content Include="Assets\Tutorial\tutodivision2.png" />
+    <Content Include="Assets\Tutorial\tutodivision3.png" />
+    <Content Include="Assets\Tutorial\tutomultiplication1.png" />
+    <Content Include="Assets\Tutorial\tutomultiplication2.png" />
+    <Content Include="Assets\Tutorial\tutomultiplication3.png" />
+    <Content Include="Assets\Tutorial\tutomultiplication4.png" />
+    <Content Include="Assets\Tutorial\tutomultiplication5.png" />
+    <Content Include="Assets\Tutorial\tutosoustraction1.png" />
+    <Content Include="Assets\Tutorial\tutosoustraction2.png" />
+    <Content Include="Assets\Tutorial\tutosoustraction3.png" />
+    <Content Include="Assets\WideLogo.scale-240.png" />
+    <Content Include="Assets\Audio\Seed-AI_2D-320.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Audio\song.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Package.StoreAssociation.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="AdventureMap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChooseLevel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChooseMode.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChooseQuizz.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChooseType.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GamePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LeaderBoard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MultiPlayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tutorials.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Facebook.7.0.6\lib\portable-win81+wpa81\Facebook.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Facebook.Client, Version=0.9.1.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Facebook.Client.1.0.4\lib\wpa81\Facebook.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Parse, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Parse.1.6.2\lib\wpa81\Parse.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Parse.WinRT, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Parse.1.6.2\lib\wpa81\Parse.WinRT.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetPlatformIdentifier)' == '' ">
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+  </PropertyGroup>
+  <Import Project="..\KingOfMathWF.Shared\KingOfMathWF.Shared.projitems" Label="Shared" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,235 @@
+﻿<Page
+    x:Class="KingOfMathWF.AdventureMap"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:KingOfMathWF"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/b8.png"/>
+        </Grid.Background>
+        
+        
+        
+        
+        <ListView x:Name="listView" HorizontalAlignment="Center" VerticalAlignment="Center" Width="{Binding}" >
+            <Grid x:Name="grid1" Height="640" Width="{Binding}">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Assets/template1.jpg"/>
+                </Grid.Background>
+                <Button x:Name="button1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="103,16,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding }"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="62,128,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="191,154,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button4" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="281,253,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button5" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="132,274,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button6" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,356,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button7" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="191,356,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button8" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="313,437,-22,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button9" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="191,497,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button10" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="173,582,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+            </Grid>
+            <Grid x:Name="grid2" Height="640" Width="{Binding}">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Assets/template2.jpg"/>
+                </Grid.Background>
+                <Button x:Name="button11" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="244,0,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button12" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="70,0,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button13" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,95,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button14" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="70,181,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button15" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="191,151,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button16" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="281,238,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button17" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="173,328,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button18" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="263,408,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button19" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="113,474,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button20" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="173,562,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+            </Grid>
+            <Grid  x:Name="grid3" Height="640" Width="{Binding}">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Assets/template3.jpg"/>
+                </Grid.Background>
+                <Button x:Name="button21" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="124,0,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button22" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="69,69,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button23" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="191,101,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button24" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="253,164,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button25" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="235,242,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button26" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="213,333,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button27" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="99,354,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button28" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="69,458,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button29" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="213,494,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button30" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="281,582,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+            </Grid>
+            <Grid x:Name="grid4" Height="640" Width="{Binding}">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Assets/template4.jpg"/>
+                </Grid.Background>
+                <Button x:Name="button31" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="62,24,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button32" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="62,128,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button33" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="119,214,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button34" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="259,214,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button35" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="291,315,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button36" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="174,384,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button37" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="37,384,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="button38" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="103,533,0,0" BorderThickness="0" Width="78" Height="30" RenderTransformOrigin="0.5,0.5" Click="button1_Click">
+                    <Button.Background>
+                        <ImageBrush Stretch="None" ImageSource="{Binding}"/>
+                    </Button.Background>
+                </Button>
+            </Grid>
+                   
+                
+        </ListView>
+
+    </Grid>
+</Page>
